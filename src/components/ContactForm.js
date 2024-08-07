@@ -1,0 +1,129 @@
+import React, { useState } from 'react';
+import { XIcon } from '@heroicons/react/solid';
+
+export default function ContactForm() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    message: '',
+  });
+  const [status, setStatus] = useState('');
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+  const apiKey = process.env.REACT_APP_W3F_API_KEY;
+
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        access_key: apiKey,
+        ...formData,
+      }),
+    });
+
+    const result = await res.json();
+    if (result.success) {
+      setStatus('Success! Your message has been sent.');
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        message: '',
+      });
+    } else {
+      setStatus('Oops! Something went wrong. Please try again.');
+    }
+  };
+
+  return (
+    <div id="contact" className="relative">
+      {/* Dropdown Menu */}
+      {isOpen && (
+        <div className="absolute right-5 top-0 transform -translate-y-full mb-2 w-72 bg-white dark:bg-border-card border rounded-md shadow-lg z-20">
+          <form onSubmit={handleSubmit} className="p-4 space-y-4">
+            <div>
+              <label htmlFor="prenom" className="block text-md font-medium dark:text-white text-gray-700">
+                Prénom
+              </label>
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                value={formData.prenom}
+                onChange={handleChange}
+                className="mt-1 block w-full rounded-md bg-orange-50 dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="nom" className="block text-md font-medium dark:text-white text-gray-700">
+                Nom
+              </label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                value={formData.nom}
+                onChange={handleChange}
+                className="mt-1 block w-full rounded-md bg-orange-50 dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-md font-medium dark:text-white text-gray-700">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="mt-1 block w-full rounded-md bg-orange-50 dark:bg-gray-300 border-gray-300 shadow-smlg:text-lg"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="message" className="block text-md font-medium dark:text-white text-gray-700">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows="4"
+                className="mt-1 block w-full rounded-md bg-orange-50 dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full rounded-md bg-orange-600 py-2 px-4 text-white shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+            >
+              Send
+            </button>
+            {status && <p className="mt-2 text-center text-sm text-gray-600">{status}</p>}
+          </form>
+        </div>
+      )}
+
+      {/* Hamburger Button */}
+      <button onClick={toggleMenu} className="p-2 text-gray-600 absolute top-0 right-5 z-30" aria-label={isOpen ? "Fermer le formulaire de contact" : "Ouvrir le formulaire de contact"}>
+        {isOpen ? <XIcon className="w-6 h-6" /> : "Contactez-moi"}
+      </button>
+    </div>
+  );
+}
