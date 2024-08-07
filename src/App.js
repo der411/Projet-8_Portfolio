@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/style.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Error404 from './pages/Error404';
 
