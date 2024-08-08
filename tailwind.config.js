@@ -12,6 +12,7 @@ module.exports = {
         'border-card': '#1A1A1A',
         'icon': '#2A2A28',
         'footer': '#D35400',
+        'icon-git': '#7E7E77'
       },
       boxShadow: {
         'inner-custom': 'inset 0 0 60px 0 rgba(13, 13, 13, 0.6)', // Inset shadow avec couleur #0D0D0D

@@ -19,15 +19,13 @@ function Header() {
           Bonjour ! Je suis Vincent Vaitilingom, <br/>développeur web débutant.
         </p>
       </div>
-      <div className="flex justify-between w-full px-5 relative z-10">
+      <div className="flex justify-between w-full px-1 relative z-10 mt-20 sm:px-5">
         <a href="https://github.com/der411" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-icon hover:text-white" aria-label="Voir mon GitHub">
-          <i className="fa-brands fa-github text-8xl cursor-pointer"></i>
+        <i className="fa-brands fa-github text-8xl cursor-pointer"></i>
         </a>
-        <a href="/documents/Vincent_Vaitilingom_CV Développeur Web.pdf" download className="flex items-center justify-center text-icon w-24 h-24" aria-label="Télécharger mon CV">
-          <button className="border border-icon rounded-full flex flex-col items-center justify-center gap-1 text-base hover:text-white hover:bg-whitetransition-colors w-full h-full">
-            <i className="fa-solid fa-cloud-arrow-down text-2xl"></i>
-            Mon CV
-          </button>
+        <a href="/documents/Vincent_Vaitilingom_CV Développeur Web.pdf" download aria-label="Télécharger mon CV au format PDF" className="flex justify-center text-icon-git w-24 h-24 border border-icon-git rounded-full flex-col items-center gap-1 text-base hover:text-white">
+        <i className="fa-solid fa-cloud-arrow-down text-2xl"></i>
+        <span>Mon CV</span>
         </a>
       </div>
     </header>

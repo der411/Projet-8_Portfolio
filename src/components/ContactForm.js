@@ -49,7 +49,6 @@ export default function ContactForm() {
 
   return (
     <div id="contact" className="relative">
-      {/* Dropdown Menu */}
       {isOpen && (
         <div className="absolute right-5 top-0 transform -translate-y-full mb-2 w-72 bg-white dark:bg-border-card border rounded-md shadow-lg z-20">
           <form onSubmit={handleSubmit} className="p-4 space-y-4">
@@ -63,7 +62,7 @@ export default function ContactForm() {
                 name="prenom"
                 value={formData.prenom}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md bg-orange-50 dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg"
+                className="mt-1 block w-full rounded-md bg-orange-50 dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg text-gray-700"
                 required
               />
             </div>
@@ -77,7 +76,7 @@ export default function ContactForm() {
                 name="nom"
                 value={formData.nom}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md bg-orange-50 dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg"
+                className="mt-1 block w-full rounded-md bg-orange-50 dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg text-gray-700"
                 required
               />
             </div>
@@ -91,7 +90,7 @@ export default function ContactForm() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md bg-orange-50 dark:bg-gray-300 border-gray-300 shadow-smlg:text-lg"
+                className="mt-1 block w-full rounded-md bg-orange-50 dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg text-gray-700"
                 required
               />
             </div>
@@ -105,7 +104,7 @@ export default function ContactForm() {
                 value={formData.message}
                 onChange={handleChange}
                 rows="4"
-                className="mt-1 block w-full rounded-md bg-orange-50 dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg"
+                className="mt-1 block w-full rounded-md bg-orange-50 dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg text-gray-700"
                 required
               />
             </div>
@@ -120,10 +119,20 @@ export default function ContactForm() {
         </div>
       )}
 
-      {/* Hamburger Button */}
-      <button onClick={toggleMenu} className="p-2 text-gray-600 absolute top-0 right-5 z-30" aria-label={isOpen ? "Fermer le formulaire de contact" : "Ouvrir le formulaire de contact"}>
-        {isOpen ? <XIcon className="w-6 h-6" /> : "Contactez-moi"}
-      </button>
+<button
+  onClick={toggleMenu}
+  className="flex items-center justify-center p-4 rounded-b-lg bg-white font-bold text-black absolute top-0 right-5 z-30"
+  aria-label={isOpen ? "Fermer le formulaire de contact" : "Ouvrir le formulaire de contact"}
+>
+  {isOpen ? (
+    <XIcon className="w-6 h-6" />
+  ) : (
+    <>
+      <span className="hidden md:inline"><i className="fas fa-envelope"></i> Contactez-moi !</span>
+      <i className="fas fa-envelope md:hidden"></i>
+    </>
+  )}
+</button>
     </div>
   );
 }

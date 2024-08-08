@@ -12,50 +12,35 @@ function Nav() {
     setActiveLink(link);
   };
 
+  const navLinks = [
+    { href: '#about', label: 'À propos' },
+    { href: '#projects', label: 'Réalisations' },
+    { href: '#services', label: 'Services' },
+    { href: '#contact', label: 'Contact' },
+  ];
+
   return (
-    <nav className="flex justify-end items-center m-2 p-3 md:justify-end">
-      <div className="text-2xl cursor-pointer md:hidden" onClick={toggleMenu}>
-        <i className="fa fa-bars"></i>
-      </div>
-      <ul className={`list-none flex gap-5 md:flex ${isOpen ? 'flex' : 'hidden'} md:static absolute top-14 right-0 bg-gray-800 md:bg-transparent flex-col md:flex-row w-48 md:w-auto shadow-md md:shadow-none`}>
-        <li className={`text-center p-2 md:p-0 ${activeLink === '#about' ? 'underline' : ''}`}>
-          <a
-            href="#about"
-            className="text-black dark:text-white"
-            onClick={() => handleSetActiveLink('#about')}
-          >
-            À propos
-          </a>
-        </li>
-        <li className={`text-center p-2 md:p-0 ${activeLink === '#projects' ? 'underline' : ''}`}>
-          <a
-            href="#projects"
-            className="text-black dark:text-white"
-            onClick={() => handleSetActiveLink('#projects')}
-          >
-            Réalisations
-          </a>
-        </li>
-        <li className={`text-center p-2 md:p-0 ${activeLink === '#services' ? 'underline' : ''}`}>
-          <a
-            href="#services"
-            className="text-black dark:text-white"
-            onClick={() => handleSetActiveLink('#services')}
-          >
-            Services
-          </a>
-        </li>
-        <li className={`text-center p-2 md:p-0 ${activeLink === '#contact' ? 'underline' : ''}`}>
-          <a
-            href="#contact"
-            className="text-black dark:text-white"
-            onClick={() => handleSetActiveLink('#contact')}
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <h1 className="sr-only">Navigation principale</h1> {/* Titre de niveau 1 caché visuellement */}
+      <nav className="flex justify-end items-center m-2 p-3 md:justify-end">
+        <div className="text-2xl cursor-pointer md:hidden" onClick={toggleMenu}>
+          <i className="fa fa-bars"></i>
+        </div>
+        <ul className={`list-none flex gap-5 md:flex ${isOpen ? 'flex z-50' : 'hidden'} md:static absolute top-14 right-5 bg-white dark:bg-icon md:bg-transparent dark:md:bg-transparent flex-col md:flex-row w-48 md:w-auto shadow-md md:shadow-none`}>
+          {navLinks.map((link) => (
+            <li key={link.href} className={`text-center p-2 md:p-0 ${activeLink === link.href ? 'border-b-2 border-black dark:border-white' : ''}`}>
+              <a
+                href={link.href}
+                className="text-black dark:text-white"
+                onClick={() => handleSetActiveLink(link.href)}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
   );
 }
 
