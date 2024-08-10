@@ -1,0 +1,45 @@
+[
+    {
+      "id": "1",
+      "name": "React",
+      "icon": "/assets/react-icon.svg",
+      "rating": 3
+    },
+    {
+      "id": "2",
+      "name": "Node JS",
+      "icon": "/assets/nodejs-icon.svg",
+      "rating": 3
+    },
+    {
+      "id": "3",
+      "name": "MongoDB",
+      "icon": "/assets/mongodb-icon.svg",
+      "rating": 3
+    },
+    {
+      "id": "4",
+      "name": "JavaScript",
+      "icon": "/assets/javascript-icon.svg",
+      "rating": 3
+    },
+    {
+      "id": "5",
+      "name": "Tailwind",
+      "icon": "/assets/tailwind-icon.svg",
+      "rating": 3
+    },
+    {
+      "id": "6",
+      "name": "HTML5",
+      "icon": "/assets/html-icon.svg",
+      "rating": 4
+    },
+    {
+      "id": "7",
+      "name": "CSS3",
+      "icon": "/assets/css-icon.svg",
+      "rating": 4
+    }
+  ]
+  

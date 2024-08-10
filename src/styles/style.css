@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@layer base {
+  /* Réinitialisation globale des marges et paddings, et box-sizing */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Styles globaux pour le body */
+  body {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #F7F7F7; /* Couleur de fond pour le mode clair */
+    color: #080808; /* Couleur de texte pour le mode clair */
+  }
+
+  /* Styles pour le mode sombre */
+  .dark body {
+    background-color: #1b2937;
+    color: #FFFFFF;
+  }
+
+  @keyframes github-grow {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .github-grow {
+    animation: github-grow 6s infinite;
+  }
+  
+}
