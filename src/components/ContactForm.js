@@ -128,7 +128,7 @@ export default function ContactForm() {
     <XIcon className="w-6 h-6" />
   ) : (
     <>
-      <span className="hidden md:inline"><i className="fas fa-envelope"></i> Contactez-moi !</span>
+      <span className="hidden md:inline"><i className="fas fa-envelope"></i> Me contacter</span>
       <i className="fas fa-envelope md:hidden"></i>
     </>
   )}

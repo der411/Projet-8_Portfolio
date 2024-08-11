@@ -6,7 +6,7 @@ function Footer() {
           <a href="https://x.com/VaitilingomV" target="_blank" rel="noopener noreferrer" aria-label="Voir mon X">
             <i className="fab fa-twitter text-border-card text-4xl p-5 transform transition-transform hover:scale-110"></i>
           </a>
-          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" aria-label="Voir mon LinkedIn">
+          <a href="https://www.linkedin.com/in/vincent-castillo-711610297/" target="_blank" rel="noopener noreferrer" aria-label="Voir mon LinkedIn">
             <i className="fab fa-linkedin text-border-card text-4xl p-5 transform transition-transform hover:scale-110"></i>
           </a>
         </div>

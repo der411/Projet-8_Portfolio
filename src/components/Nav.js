@@ -12,8 +12,23 @@ function Nav() {
     setActiveLink(link);
   };
 
+  const handleAnchorClick = (event, href) => {
+    event.preventDefault();
+    const targetElement = document.querySelector(href);
+    const navHeight = document.querySelector('nav').offsetHeight;
+    const targetPosition = targetElement.offsetTop - navHeight;
+
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth',
+    });
+
+    handleSetActiveLink(href);
+  };
+
   const navLinks = [
-    { href: '#projects', label: 'Réalisations' },
+    { href: '#home', label: 'Accueil' },
+    { href: '#projects', label: 'Travaux' },
     { href: '#services', label: 'Services' },
     { href: '#contact', label: 'Contact' },
   ];
@@ -21,7 +36,12 @@ function Nav() {
   return (
     <div className="fixed top-0 left-0 w-full z-50 pl-5 pr-5">
       <h1 className="sr-only">Navigation principale</h1> {/* Titre de niveau 1 caché visuellement */}
-      <nav className="max-w-1440px mx-auto flex justify-end items-center bg-nav dark:bg-footer-dark m-0 p-5 md:justify-end">
+      <nav className="max-w-1440px mx-auto flex justify-between items-center bg-nav dark:bg-footer-dark m-0 p-5">
+        <img 
+          src="/assets/auteur.webp" 
+          alt="Auteur du portfolio" 
+          className="w-14 h-14 rounded-full object-cover" 
+        />
         <div className="text-2xl cursor-pointer md:hidden" onClick={toggleMenu}>
           <i className="fa fa-bars"></i>
         </div>
@@ -31,7 +51,7 @@ function Nav() {
               <a
                 href={link.href}
                 className="text-black dark:text-white"
-                onClick={() => handleSetActiveLink(link.href)}
+                onClick={(event) => handleAnchorClick(event, link.href)}
               >
                 {link.label}
               </a>

@@ -18,8 +18,8 @@ function Projects() {
 
   return (
     <div>
-      <section id="projects" className="text-white">
-        <h2 className="text-black dark:text-white text-2xl m-5">Mes réalisations</h2>
+      <section className="text-white">
+        <h2 id="projects" className="text-black dark:text-white text-2xl m-5">Mes travaux</h2>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-5 mb-20">
           {projectsData.map((project) => (
             <div
