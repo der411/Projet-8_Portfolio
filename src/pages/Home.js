@@ -1,7 +1,7 @@
 import Banner from "../components/Banner";
 import Nav from "../components/Nav";
 import Project from "../components/Projects";
-import Services from "../components/Services";
+import Competences from "../components/Competences";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
 
@@ -13,12 +13,12 @@ function Home() {
         <Banner />
       </header>
       <main>
-        <Project/>
-        <Services/>
+        <Project />
+        <Competences />
       </main>
       <footer>
-        <ContactForm/>
-        <Footer/>
+        <ContactForm />
+        <Footer />
       </footer>
     </div>
   );

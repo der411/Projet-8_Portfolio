@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Importation de la police Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 @layer base {
-  /* Réinitialisation globale des marges et paddings, et box-sizing */
+  /* Réinitialisation globale des marges, paddings et box-sizing */
   * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,6 @@
 
   /* Styles globaux pour le body */
   body {
-    padding: 0;
     margin: 0 auto;
     max-width: 1440px;
     font-family: 'Roboto', sans-serif;
@@ -25,10 +25,11 @@
 
   /* Styles pour le mode sombre */
   .dark body {
-    background-color: #1b2937;
-    color: #FFFFFF;
+    background-color: #1b2937; /* Couleur de fond pour le mode sombre */
+    color: #FFFFFF; /* Couleur de texte pour le mode sombre */
   }
 
+  /* Animation pour l'effet de croissance GitHub */
   @keyframes github-grow {
     0%, 100% {
       transform: scale(1);
@@ -37,9 +38,9 @@
       transform: scale(1.2);
     }
   }
-  
+
+  /* Classe utilitaire pour appliquer l'animation */
   .github-grow {
     animation: github-grow 6s infinite;
   }
-  
 }

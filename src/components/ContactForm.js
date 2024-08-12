@@ -20,7 +20,7 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-  const apiKey = process.env.REACT_APP_W3F_API_KEY;
+    const apiKey = process.env.REACT_APP_W3F_API_KEY;
 
     const res = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
@@ -53,7 +53,10 @@ export default function ContactForm() {
         <div className="absolute right-5 top-0 transform -translate-y-full mb-2 w-72 bg-footer dark:bg-border-card border rounded-md shadow-lg z-20">
           <form onSubmit={handleSubmit} className="p-4 space-y-4">
             <div>
-              <label htmlFor="prenom" className="block text-md font-medium dark:text-white text-gray-700">
+              <label
+                htmlFor="prenom"
+                className="block text-md font-medium dark:text-white text-gray-700"
+              >
                 Prénom
               </label>
               <input
@@ -67,7 +70,10 @@ export default function ContactForm() {
               />
             </div>
             <div>
-              <label htmlFor="nom" className="block text-md font-medium dark:text-white text-gray-700">
+              <label
+                htmlFor="nom"
+                className="block text-md font-medium dark:text-white text-gray-700"
+              >
                 Nom
               </label>
               <input
@@ -81,7 +87,10 @@ export default function ContactForm() {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-md font-medium dark:text-white text-gray-700">
+              <label
+                htmlFor="email"
+                className="block text-md font-medium dark:text-white text-gray-700"
+              >
                 Email
               </label>
               <input
@@ -95,7 +104,10 @@ export default function ContactForm() {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-md font-medium dark:text-white text-gray-700">
+              <label
+                htmlFor="message"
+                className="block text-md font-medium dark:text-white text-gray-700"
+              >
                 Message
               </label>
               <textarea
@@ -111,7 +123,7 @@ export default function ContactForm() {
             <button
               type="submit"
               className="w-full rounded-md bg-gradient-to-r from-custom-blue to-custom-blue-dark py-2 px-4 text-white shadow-sm hover:from-custom-blue-dark hover:to-custom-blue focus:outline-none focus:ring-2 focus:ring-custom-blue focus:ring-offset-2"
-              >
+            >
               Envoyer
             </button>
             {status && <p className="mt-2 text-center text-sm text-gray-600">{status}</p>}
@@ -119,21 +131,22 @@ export default function ContactForm() {
         </div>
       )}
 
-<button
-  onClick={toggleMenu}
-  className="flex items-center justify-center p-4 rounded-b-lg bg-white font-bold text-black absolute top-0 right-5 z-30"
-  aria-label={isOpen ? "Fermer le formulaire de contact" : "Ouvrir le formulaire de contact"}
->
-  {isOpen ? (
-    <XIcon className="w-6 h-6" />
-  ) : (
-    <>
-      <span className="hidden md:inline"><i className="fas fa-envelope"></i> Me contacter</span>
-      <i className="fas fa-envelope md:hidden"></i>
-    </>
-  )}
-</button>
+      <button
+        onClick={toggleMenu}
+        className="flex items-center justify-center p-4 rounded-b-lg bg-white font-bold text-black absolute top-0 right-5 z-30"
+        aria-label={isOpen ? "Fermer le formulaire de contact" : "Ouvrir le formulaire de contact"}
+      >
+        {isOpen ? (
+          <XIcon className="w-6 h-6" />
+        ) : (
+          <>
+            <span className="hidden md:inline">
+              <i className="fas fa-envelope"></i> Me contacter
+            </span>
+            <i className="fas fa-envelope md:hidden"></i>
+          </>
+        )}
+      </button>
     </div>
   );
 }
-

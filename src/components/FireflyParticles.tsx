@@ -14,6 +14,7 @@ const FireflyParticles: React.FC = () => {
           options: particleOptions,
         });
       } catch (error) {
+        console.error("Erreur lors du chargement des particules :", error);
       }
     };
 
