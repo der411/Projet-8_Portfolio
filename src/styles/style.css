@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Importation de la police Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "~@fontsource/roboto/index.css"; 
 
 @layer base {
   /* Réinitialisation globale des marges, paddings et box-sizing */
