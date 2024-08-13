@@ -1,7 +1,6 @@
 import Modal from 'react-modal';
 import Slideshow from './SlideShow';
 
-Modal.setAppElement('#root');
 
 function ModalCard({ isOpen, onRequestClose, project }) {
   if (!project) {
@@ -10,6 +9,7 @@ function ModalCard({ isOpen, onRequestClose, project }) {
 
   return (
     <Modal
+      key={project ? project.id : 'default-key'}
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Détails du projet"

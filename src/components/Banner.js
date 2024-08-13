@@ -5,7 +5,7 @@ function Banner() {
   return (
     <div
       id="home"
-      className="bg-card text-white p-10 m-5 mb-20 mt-20 pb-40 shadow-lg flex flex-col items-center relative rounded-xl dark:bg-custom-gray max-h-screen overflow-hidden"
+      className="bg-card text-white p-10 m-5 mt-20 pb-10 shadow-lg flex flex-col items-center relative rounded-xl dark:bg-custom-gray min-h-screen overflow-hidden"
     >
       <FireflyParticles />
       <div className="absolute top-0 right-2 p-4 z-10">
@@ -41,23 +41,20 @@ function Banner() {
     fill="url(#grad1)"
   />
 </svg>
-      <div className="flex flex-col relative z-10">
-        <h1 className="text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-bold block pt-10 pb-10 sm:pb-20 sm:pt-20">
-          Vincent Vaïtilingom
-        </h1>
+      <div className="flex flex-col relative mt-20 z-10 2xl:mt-40">
         <p className="text-left max-w-4xl">
-          <span className="text-md sm:text-lg md:text-2xl pb-6 flex items-start">
-          <i class="fa-solid fa-arrow-right mr-5 text-gray-600 dark:text-footer-dark"></i> Développeur web aimant la création de sites web modernes et interactifs.
+          <span className="text-md sm:text-lg md:text-2xl pb-6 flex items-baseline">
+          <i className="hidden md:block fa-solid fa-arrow-right mr-5 text-gray-600 dark:text-footer-dark"></i> Développeur web aimant la création de sites web modernes et interactifs.
           </span>
-          <span className="text-md sm:text-lg md:text-2xl pb-6 flex items-start">
-          <i class="fa-solid fa-arrow-right mr-5 text-gray-600 dark:text-footer-dark"></i> Depuis plus d'un an, j'ai appris à utiliser HTML, CSS, JavaScript, ainsi que des outils comme React, Express, MongoDB et d'autres.
+          <span className="text-md sm:text-lg md:text-2xl pb-6 flex items-baseline">
+          <i className="hidden md:block fa-solid fa-arrow-right mr-5 text-gray-600 dark:text-footer-dark"></i> Depuis plus d'un an, j'ai appris à utiliser HTML, CSS, JavaScript, ainsi que des outils comme React, Express, MongoDB et d'autres.
           </span>
-          <span className="text-md sm:text-lg md:text-2xl pb-4 flex items-start">
-          <i class="fa-solid fa-arrow-right mr-5 text-gray-600 dark:text-footer-dark"></i> J'aime travailler sur des projets aussi bien en front-end qu'en back-end, en utilisant des méthodes de travail Agile comme Scrum et Kanban.
+          <span className="text-md sm:text-lg md:text-2xl pb-4 flex items-baseline">
+          <i className="hidden md:block fa-solid fa-arrow-right mr-5 text-gray-600 dark:text-footer-dark"></i> J'aime travailler sur des projets aussi bien en front-end qu'en back-end, en utilisant des méthodes de travail Agile comme Scrum et Kanban.
           </span>
         </p>
       </div>
-      <div className="flex justify-between w-full px-1 relative z-10 mt-20 sm:px-5">
+      <div className="flex justify-between w-full px-1 relative z-10 mt-10 sm:px-5">
         <a
           href="https://github.com/der411"
           target="_blank"
