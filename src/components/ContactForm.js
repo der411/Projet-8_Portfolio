@@ -48,49 +48,54 @@ export default function ContactForm() {
   };
 
   return (
-    <div id="contact" className="relative">
-      {isOpen && (
-        <div className="absolute right-5 top-0 transform -translate-y-full mb-2 w-72 bg-footer dark:bg-border-card border rounded-md shadow-lg z-20">
-          <form onSubmit={handleSubmit} className="p-4 space-y-4">
+    <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50">
+      <div className={`relative ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}>
+        <div className="absolute right-full top-1 transform -translate-y-1">
+          <button
+            onClick={toggleMenu}
+            className="flex items-center justify-center p-4 rounded-l-lg bg-gray-400 bg-opacity-50 dark:bg-gray-700 dark:bg-opacity-50 font-bold text-black dark:text-white shadow-md hover:shadow-lg"
+            aria-label={isOpen ? "Fermer le formulaire de contact" : "Ouvrir le formulaire de contact"}
+          >
+            {isOpen ? (
+              <XIcon className="w-6 h-6" />
+            ) : (
+                  <i className="fas fa-envelope"></i>
+            )}
+          </button>
+        </div>
+
+        <div className={`w-72 p-4 bg-nav dark:bg-custom-gray border dark:border-gray-700 rounded-l-lg shadow-lg ${isOpen ? 'block' : 'hidden'}`}>
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label
-                htmlFor="prenom"
-                className="block text-md font-medium dark:text-white text-gray-700"
-              >
+              <label htmlFor="prenom" className="block text-sm font-medium text-gray-700 dark:text-white">
                 Prénom
               </label>
               <input
                 type="text"
                 id="prenom"
-                name="prenom"
-                value={formData.prenom}
+                name="firstName"
+                value={formData.firstName}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md bg-white dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg text-gray-700"
+                className="mt-1 block w-full rounded-md bg-gray-100 dark:bg-bg-dark border-gray-300 dark:border-gray-700 text-gray-700 dark:text-white"
                 required
               />
             </div>
             <div>
-              <label
-                htmlFor="nom"
-                className="block text-md font-medium dark:text-white text-gray-700"
-              >
+              <label htmlFor="nom" className="block text-sm font-medium text-gray-700 dark:text-white">
                 Nom
               </label>
               <input
                 type="text"
                 id="nom"
-                name="nom"
-                value={formData.nom}
+                name="lastName"
+                value={formData.lastName}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md bg-white dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg text-gray-700"
+                className="mt-1 block w-full rounded-md bg-gray-100 dark:bg-bg-dark border-gray-300 dark:border-gray-700 text-gray-700 dark:text-white"
                 required
               />
             </div>
             <div>
-              <label
-                htmlFor="email"
-                className="block text-md font-medium dark:text-white text-gray-700"
-              >
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-white">
                 Email
               </label>
               <input
@@ -99,15 +104,12 @@ export default function ContactForm() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md bg-white dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg text-gray-700"
+                className="mt-1 block w-full rounded-md bg-gray-100 dark:bg-bg-dark border-gray-300 dark:border-gray-700 text-gray-700 dark:text-white"
                 required
               />
             </div>
             <div>
-              <label
-                htmlFor="message"
-                className="block text-md font-medium dark:text-white text-gray-700"
-              >
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-white">
                 Message
               </label>
               <textarea
@@ -116,7 +118,7 @@ export default function ContactForm() {
                 value={formData.message}
                 onChange={handleChange}
                 rows="4"
-                className="mt-1 block w-full rounded-md bg-white dark:bg-gray-300 border-gray-300 shadow-sm lg:text-lg text-gray-700"
+                className="mt-1 block w-full rounded-md bg-gray-100 dark:bg-bg-dark border-gray-300 dark:border-gray-700 shadow-sm text-gray-700 dark:text-white"
                 required
               />
             </div>
@@ -126,27 +128,10 @@ export default function ContactForm() {
             >
               Envoyer
             </button>
-            {status && <p className="mt-2 text-center text-sm text-gray-600">{status}</p>}
+            {status && <p className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">{status}</p>}
           </form>
         </div>
-      )}
-
-      <button
-        onClick={toggleMenu}
-        className="flex items-center justify-center p-4 rounded-b-lg bg-white font-bold text-black absolute top-0 right-5 z-30"
-        aria-label={isOpen ? "Fermer le formulaire de contact" : "Ouvrir le formulaire de contact"}
-      >
-        {isOpen ? (
-          <XIcon className="w-6 h-6" />
-        ) : (
-          <>
-            <span className="hidden md:inline">
-              <i className="fas fa-envelope"></i> Me contacter
-            </span>
-            <i className="fas fa-envelope md:hidden"></i>
-          </>
-        )}
-      </button>
+      </div>
     </div>
   );
 }

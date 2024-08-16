@@ -29,38 +29,39 @@
   }
 
   /* Styles barre de défilement */
-    div::-webkit-scrollbar-track {
+  div::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px #f8fbff;
     border-radius: 5px;
-     }
+  }
     
-    div::-webkit-scrollbar-thumb {
+  div::-webkit-scrollbar-thumb {
     background-color: #9fa9bd;
     border-radius: 5px;
-    }
-    div::-webkit-scrollbar {
+  }
+
+  div::-webkit-scrollbar {
     width: 0.5em;
     border-radius: 5px;
-    }
+  }
     
   /* Styles pour le texte d'accroche */
+  .typewriter-wrapper {
+    display: flex;
+    justify-content: center; /* Centre le texte horizontalement */
+  }
+
   .typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end) forwards;
   }
-  
-  /* The typing effect */
+
   @keyframes typing {
-    from { width: 0 }
-    to { width: 75% }
+    from { width: 0; }
+    to { width: 100%; }
   }
-  
 
   /* Animation pour l'effet de croissance GitHub */
   @keyframes github-grow {
@@ -79,7 +80,7 @@
     }
   }
 
-  /* Classe utilitaire pour appliquer l'animation */
+  /* Icone GitHub modal, Classe utilitaire pour appliquer l'animation */
   .github-grow {
     animation: github-grow 6s infinite;
   }

@@ -23,7 +23,8 @@ module.exports = {
         'nav' : '#E0E0E0',
         'git': '#E5EAEB',
         'custom-blue': '#596b7f',
-        'custom-blue-dark': '#3e4d5e'
+        'custom-blue-dark': '#3e4d5e',
+        'bg-dark': '#121212',
       },
       boxShadow: {
         'inner-custom': 'inset 0 0 60px 0 rgba(13, 13, 13, 0.6)', // Ombre en creux avec couleur #0D0D0D

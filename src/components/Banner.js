@@ -53,8 +53,8 @@ function Banner() {
           fill="url(#grad1)"
         />
       </svg>
-      <div className="flex flex-col relative mt-20 z-10 2xl:mt-40 typewriter">
-        <p className="text-center max-w-4xl text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl dark:text-white pb-6 flex items-baseline">
+      <div className="flex flex-col relative mt-20 z-10 2xl:mt-40 typewriter-wrapper">
+        <p className="text-center max-w-4xl text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl dark:text-white pb-6 flex items-baseline typewriter">
           Développeur web dédié à la création de sites modernes.
         </p>
       </div>
@@ -67,15 +67,15 @@ function Banner() {
           className="flex items-center justify-center dark:text-white dark:hover:text-gray-400 text-black hover:text-black hover:text-opacity-60 transition duration-300"
           aria-label="Voir mon GitHub"
         >
-          <i className="fa-brands fa-github text-8xl cursor-pointer"></i>
+          <i className="fa-brands fa-github text-7xl md:text-8xl cursor-pointer"></i>
         </a>
         <button
           onClick={handleDownload}
           aria-label="Télécharger mon CV au format PDF"
-          className="flex justify-center text-icon-git w-24 h-24 border hover:border-opacity-60 border-black dark:border-white dark:hover:border-gray-400 rounded-full flex-col items-center gap-1 text-black hover:text-opacity-60 transition duration-300 dark:text-white dark:hover:text-gray-400"
+          className="flex justify-center text-icon-git w-20 h-20 md:w-28 md:h-28 border hover:border-opacity-60 border-black dark:border-white dark:hover:border-gray-400 rounded-full flex-col items-center gap-1 text-black hover:text-opacity-60 transition duration-300 dark:text-white dark:hover:text-gray-400"
         >
-          <i className="fa-solid fa-cloud-arrow-down text-2xl"></i>
-          <span>Mon CV</span>
+          <i className="fa-solid fa-cloud-arrow-down text-xl md:text-6xl"></i>
+          <span className='text-xs md:text-md lg:text-lg'>CV</span>
         </button>
       </div>
     </div>

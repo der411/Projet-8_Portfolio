@@ -30,7 +30,7 @@ function Nav() {
     { href: '#home', label: 'Accueil' },
     { href: '#projects', label: 'Travaux' },
     { href: '#competences', label: 'Compétences' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#reseaux-sociaux', label: 'Réseaux sociaux' },
   ];
 
   return (
@@ -42,7 +42,7 @@ function Nav() {
           alt="Auteur du portfolio"
           className="w-14 h-14 rounded-full object-cover"
         />
-        <h1 className="w-10 text-md md:text-lg ml-2">
+        <h1 className="w-10 text-sm md:text-lg ml-2">
           Vincent Vaïtilingom
         </h1>
         </div>
