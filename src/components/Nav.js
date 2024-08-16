@@ -35,14 +35,14 @@ function Nav() {
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 pl-5 pr-5">
-      <nav className="max-w-1440px mx-auto flex justify-between items-center bg-nav dark:bg-footer-dark m-0 p-5">
+      <nav className="max-w-1440px mx-auto flex justify-between items-center bg-nav dark:bg-border-card m-0 p-5">
         <div className="flex items-center">
         <img
           src="/assets/auteur.webp"
           alt="Auteur du portfolio"
           className="w-14 h-14 rounded-full object-cover"
         />
-        <h1 className="text-md md:text-xl ml-2 font-bold block">
+        <h1 className="w-10 text-md md:text-lg ml-2">
           Vincent Vaïtilingom
         </h1>
         </div>

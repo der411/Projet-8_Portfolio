@@ -7,16 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+
+      maxWidth: {
+        '2xs': '14rem',
+        '3xs': '10rem',
+      },
+
       colors: {
         'custom-gray': '#0D0D0D',
         'border-card': '#1A1A1A',
         'icon': '#2A2A28',
-        'footer-dark': '#C75000',
-        'footer': '#cad5d8',
+        'footer': '#E0E0E0',
         'git-dark': '#7E7E77',
-        'card': '#596b7f',
-        'nav' : '#e1e1e0',
-        'nav-dark': '#595959',
+        'card': '#F5F5F5',
+        'nav' : '#E0E0E0',
         'git': '#E5EAEB',
         'custom-blue': '#596b7f',
         'custom-blue-dark': '#3e4d5e'

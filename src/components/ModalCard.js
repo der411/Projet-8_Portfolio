@@ -34,7 +34,13 @@ function ModalCard({ isOpen, onRequestClose, project }) {
           <p className="mb-4 text-[14px] md:text-[16px] sm:text-[15px]">
             {project.development}
           </p>
-
+          <h3 className="text-lg font-bold mb-4">Défi et Solution :</h3>
+          <p className="mb-4 text-[14px] md:text-[16px] sm:text-[15px]">
+            {project.chalenges}
+          </p>
+          <p className="mb-4 text-[14px] md:text-[16px] sm:text-[15px]">
+            {project.solution}
+          </p>
           {project.githubLink && (
             <p className="mb-4">
               <a

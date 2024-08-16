@@ -19,11 +19,23 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <div className="flex items-center">
-      <i
-        className={`fa-solid ${isDarkMode ? 'fa-toggle-on' : 'fa-toggle-off'} text-2xl cursor-pointer`}
+    <div className="flex items-center mt-5">
+      <div
+        className="relative w-16 h-8 bg-gray-300 dark:bg-gray-600 rounded-full cursor-pointer"
         onClick={toggleDarkMode}
-      ></i>
+      >
+        <div
+          className={`absolute top-1 left-1 w-6 h-6 rounded-full transition-transform duration-300 ease-in-out transform ${
+            isDarkMode ? 'translate-x-8 bg-gray-300' : 'bg-gray-800'
+          }`}
+        >
+          <i
+            className={`fa-solid ${
+              isDarkMode ? 'fa-moon' : 'fa-sun'
+            } text-white text-sm flex items-center justify-center h-full`}
+          ></i>
+        </div>
+      </div>
     </div>
   );
 };

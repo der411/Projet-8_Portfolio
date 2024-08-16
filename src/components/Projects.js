@@ -18,7 +18,7 @@ function Projects() {
 
   return (
     <div>
-      <section className="text-white">
+      <section className="text-white pt-10">
         <h2 id="projects" className="text-black dark:text-white text-2xl m-5">
           Mes travaux
         </h2>

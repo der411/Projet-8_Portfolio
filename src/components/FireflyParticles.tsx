@@ -9,6 +9,8 @@ const FireflyParticles: React.FC = () => {
       try {
         await loadFireflyPreset(tsParticles);
 
+        
+
         tsParticles.load({
           id: "header-particles",
           options: particleOptions,

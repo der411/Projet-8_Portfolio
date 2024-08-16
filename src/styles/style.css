@@ -18,15 +18,49 @@
     max-width: 1440px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background-color: #F7F7F7; /* Couleur de fond pour le mode clair */
+    background-color: #FFFFFF; /* Couleur de fond pour le mode clair */
     color: #080808; /* Couleur de texte pour le mode clair */
   }
 
   /* Styles pour le mode sombre */
   .dark body {
-    background-color: #1b2937; /* Couleur de fond pour le mode sombre */
+    background-color: #121212; /* Couleur de fond pour le mode sombre */
     color: #FFFFFF; /* Couleur de texte pour le mode sombre */
   }
+
+  /* Styles barre de défilement */
+    div::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #f8fbff;
+    border-radius: 5px;
+     }
+    
+    div::-webkit-scrollbar-thumb {
+    background-color: #9fa9bd;
+    border-radius: 5px;
+    }
+    div::-webkit-scrollbar {
+    width: 0.5em;
+    border-radius: 5px;
+    }
+    
+  /* Styles pour le texte d'accroche */
+  .typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 75% }
+  }
+  
 
   /* Animation pour l'effet de croissance GitHub */
   @keyframes github-grow {
@@ -35,6 +69,13 @@
     }
     50% {
       transform: scale(1.2);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .typewriter {
+      animation: none;
+      white-space: normal;
     }
   }
 

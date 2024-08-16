@@ -17,7 +17,7 @@ function Banner() {
   return (
     <div
       id="home"
-      className="bg-card text-white p-10 m-5 mt-20 pb-10 shadow-lg flex flex-col items-center relative rounded-xl dark:bg-custom-gray min-h-screen overflow-hidden"
+      className="bg-card text-black p-10 m-5 mt-20 pb-10 shadow-lg flex flex-col items-center relative rounded-xl dark:bg-custom-gray overflow-hidden"
     >
       <FireflyParticles />
       <div className="absolute top-0 right-2 p-4 z-10">
@@ -53,28 +53,18 @@ function Banner() {
           fill="url(#grad1)"
         />
       </svg>
-      <div className="flex flex-col relative mt-20 z-10 2xl:mt-40">
-        <p className="text-left max-w-4xl">
-          <span className="text-md sm:text-lg md:text-2xl pb-6 flex items-baseline">
-            <i className="hidden md:block fa-solid fa-arrow-right mr-5 text-gray-600 dark:text-footer-dark"></i>
-            Développeur web aimant la création de sites web modernes et interactifs.
-          </span>
-          <span className="text-md sm:text-lg md:text-2xl pb-6 flex items-baseline">
-            <i className="hidden md:block fa-solid fa-arrow-right mr-5 text-gray-600 dark:text-footer-dark"></i>
-            Depuis plus d'un an, j'ai appris à utiliser HTML, CSS, JavaScript, ainsi que des outils comme React, Express, MongoDB et d'autres.
-          </span>
-          <span className="text-md sm:text-lg md:text-2xl pb-4 flex items-baseline">
-            <i className="hidden md:block fa-solid fa-arrow-right mr-5 text-gray-600 dark:text-footer-dark"></i>
-            J'aime travailler sur des projets aussi bien en front-end qu'en back-end, en utilisant des méthodes de travail Agile comme Scrum et Kanban.
-          </span>
+      <div className="flex flex-col relative mt-20 z-10 2xl:mt-40 typewriter">
+        <p className="text-center max-w-4xl text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl dark:text-white pb-6 flex items-baseline">
+          Développeur web dédié à la création de sites modernes.
         </p>
       </div>
+
       <div className="flex justify-between w-full px-1 relative z-10 mt-10 sm:px-5">
         <a
           href="https://github.com/der411"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center dark:text-git-dark dark:hover:text-white text-git hover:text-white"
+          className="flex items-center justify-center dark:text-white dark:hover:text-gray-400 text-black hover:text-black hover:text-opacity-60 transition duration-300"
           aria-label="Voir mon GitHub"
         >
           <i className="fa-brands fa-github text-8xl cursor-pointer"></i>
@@ -82,7 +72,7 @@ function Banner() {
         <button
           onClick={handleDownload}
           aria-label="Télécharger mon CV au format PDF"
-          className="flex justify-center text-icon-git w-24 h-24 border border-icon-git rounded-full flex-col items-center gap-1 text-git hover:text-white dark:text-git-dark dark:hover:text-white"
+          className="flex justify-center text-icon-git w-24 h-24 border hover:border-opacity-60 border-black dark:border-white dark:hover:border-gray-400 rounded-full flex-col items-center gap-1 text-black hover:text-opacity-60 transition duration-300 dark:text-white dark:hover:text-gray-400"
         >
           <i className="fa-solid fa-cloud-arrow-down text-2xl"></i>
           <span>Mon CV</span>

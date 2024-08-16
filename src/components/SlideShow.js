@@ -16,13 +16,13 @@ function Slideshow({ pictures }) {
       {pictures.length > 1 && (
         <>
           <button
-            className="absolute top-1/2 left-2 transform -translate-y-1/2 text-black dark:text-white bg-transparent border-none p-2 cursor-pointer lg:text-5xl md:text-4xl sm:text-3xl text-xl" aria-label="Passez à la photo précédente"
+            className="absolute top-1/2 left-2 md:left-1 transform -translate-y-1/2 text-black dark:text-white bg-transparent border-none p-2 cursor-pointer lg:text-5xl md:text-4xl sm:text-3xl text-xl" aria-label="Passez à la photo précédente"
             onClick={prevSlide}
           >
             <i className="fas fa-chevron-left"></i>
           </button>
           <button
-            className="absolute top-1/2 right-2 transform -translate-y-1/2 text-black dark:text-white bg-transparent border-none p-2 cursor-pointer lg:text-5xl md:text-4xl sm:text-3xl text-xl" aria-label="Passez à la photo suivante"
+            className="absolute top-1/2 right-2 md:right-1 transform -translate-y-1/2 text-black dark:text-white bg-transparent border-none p-2 cursor-pointer lg:text-5xl md:text-4xl sm:text-3xl text-xl" aria-label="Passez à la photo suivante"
             onClick={nextSlide}
           >
             <i className="fas fa-chevron-right"></i>
@@ -35,7 +35,8 @@ function Slideshow({ pictures }) {
       <img
         src={pictures[currentIndex]}
         alt={`Slide ${currentIndex + 1}`}
-        className="w-3/5 max-h-[250px] object-contain rounded-lg block md:max-h-[200px] sm:max-h-[150px]"
+        loading="lazy"
+        className="max-w-3xs min-h-[300px] object-contain rounded-lg block lg:max-w-xs md:max-w-2xs md:min-h-[100px] sm:max-w-xs xs:min-h-[100px]"
       />
     </div>
   );
