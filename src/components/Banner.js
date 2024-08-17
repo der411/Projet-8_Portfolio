@@ -4,7 +4,7 @@ import DarkModeToggle from './DarkModeToggle';
 
 function Banner() {
 
-
+  // Fonction pour télécharger le CV
   function handleDownload() {
     const link = document.createElement('a');
     link.href = '/documents/Vincent_Vaitilingom_CV Développeur Web.pdf';

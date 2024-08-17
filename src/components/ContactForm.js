@@ -64,7 +64,7 @@ export default function ContactForm() {
           </button>
         </div>
 
-        <div className={`w-72 p-4 bg-nav dark:bg-custom-gray border dark:border-gray-700 rounded-l-lg shadow-lg ${isOpen ? 'block' : 'hidden'}`}>
+        <div className={`w-72 p-4 bg-nav dark:bg-custom-gray border dark:border-gray-700 rounded-bl-lg shadow-lg ${isOpen ? 'block' : 'hidden'}`}>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label htmlFor="prenom" className="block text-sm font-medium text-gray-700 dark:text-white">

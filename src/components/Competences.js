@@ -1,7 +1,6 @@
 import RatingStars from './RatingStars';
-import competencesData from '../data/competencesData.json';
 
-function Competences() {
+function Competences( { competences } ) {
   return (
     <section
       id="competences"
@@ -13,14 +12,14 @@ function Competences() {
         <p>Développement d'applications web front-end et back-end.</p>
       </div>
       <div className="flex flex-wrap justify-center">
-        {competencesData.map((service) => (
-          <div key={service.id} className="m-2 text-center">
+        {competences.map((competence) => (
+          <div key={competence.id} className="m-2 text-center">
             <img
-              src={service.icon}
-              alt={`${service.name} icon`}
+              src={competence.icon}
+              alt={`${competence.name} icon`}
               className="m-5 w-12 h-12 object-contain"
             />
-            <RatingStars rating={service.rating} />
+            <RatingStars rating={competence.rating} />
           </div>
         ))}
       </div>

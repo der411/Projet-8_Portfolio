@@ -36,7 +36,7 @@ function Slideshow({ pictures }) {
         src={pictures[currentIndex]}
         alt={`Slide ${currentIndex + 1}`}
         loading="lazy"
-        className="max-w-3xs min-h-[300px] object-contain rounded-lg block lg:max-w-xs md:max-w-2xs md:min-h-[100px] sm:max-w-xs xs:min-h-[100px]"
+        className="max-w-3xs min-h-[300px] object-contain rounded-lg block lg:max-w-xs md:max-w-2xs md:min-h-[100px] sm:max-w-xs xs:min-h-[100px] xl:max-w-md xl:min-h-[300px]"
       />
     </div>
   );

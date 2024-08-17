@@ -1,4 +1,3 @@
-import React from 'react';
 
 function RatingStars({ rating }) {
   // Nombre total d'étoiles
