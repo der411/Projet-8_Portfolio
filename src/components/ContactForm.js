@@ -41,7 +41,12 @@ export default function ContactForm() {
         lastName: '',
         email: '',
         message: '',
-      });
+      }); 
+      
+      setTimeout(() => {
+        setStatus('');
+        setIsOpen(false);
+      }, 3000); 
     } else {
       setStatus("Oups ! Un problème s'est produit. Veuillez réessayer.");
     }
