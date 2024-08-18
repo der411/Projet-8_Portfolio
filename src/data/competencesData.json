@@ -2,42 +2,49 @@
     {
       "id": "1",
       "name": "React",
+      "description": "Bibliothèque JavaScript pour le developpement front-end.",
       "icon": "/assets/react-icon.svg",
       "rating": 3
     },
     {
       "id": "2",
       "name": "Node JS",
+      "description": "Environnement d'exécution JavaScript côté serveur.",
       "icon": "/assets/nodejs-icon.svg",
       "rating": 3
     },
     {
       "id": "3",
       "name": "MongoDB",
+      "description": "Système de gestion de base de données NoSQL.",
       "icon": "/assets/mongodb-icon.svg",
       "rating": 3
     },
     {
       "id": "4",
       "name": "JavaScript",
+      "description": "Langage de programmation employé dans les pages web interactives.",
       "icon": "/assets/javascript-icon.svg",
       "rating": 3
     },
     {
       "id": "5",
-      "name": "Tailwind",
+      "name": "Tailwind CSS",
+      "description": "Framework CSS.",
       "icon": "/assets/tailwind-icon.svg",
       "rating": 3
     },
     {
       "id": "6",
       "name": "HTML5",
+      "description": "Langage de balisage pour le developpement web.",
       "icon": "/assets/html-icon.svg",
       "rating": 4
     },
     {
       "id": "7",
       "name": "CSS3",
+      "description": "Langage de style pour le developpement web.",
       "icon": "/assets/css-icon.svg",
       "rating": 4
     }

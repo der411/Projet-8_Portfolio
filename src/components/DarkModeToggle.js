@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-const DarkModeToggle = () => {
+function DarkModeToggle() {
+
+  // Etat pour gérer le mode sombre
   const [isDarkMode, setIsDarkMode] = useState(() => {
     return localStorage.getItem('darkMode') === 'true';
   });
 
+  // Effet pour activer ou désactiver le mode sombre
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
@@ -14,6 +17,7 @@ const DarkModeToggle = () => {
     localStorage.setItem('darkMode', isDarkMode);
   }, [isDarkMode]);
 
+  // Fonction pour activer ou désactiver le mode sombre
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };

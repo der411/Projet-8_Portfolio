@@ -13,13 +13,17 @@ function Competences( { competences } ) {
       </div>
       <div className="flex flex-wrap justify-center">
         {competences.map((competence) => (
-          <div key={competence.id} className="m-2 text-center">
+          <div key={competence.id} className="m-2 text-center flex flex-col items-center">
             <img
               src={competence.icon}
               alt={`${competence.name} icon`}
               className="m-5 w-12 h-12 object-contain"
             />
             <RatingStars rating={competence.rating} />
+            <div className="m-5 w-16 flex flex-col items-center text-xs">
+              <p className='font-bold'>{competence.name}</p>
+              <p>{competence.description}</p>
+            </div>
           </div>
         ))}
       </div>

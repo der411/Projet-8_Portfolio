@@ -4,7 +4,7 @@ function RatingStars({ rating }) {
   const totalStars = 5;
 
   return (
-    <div className="rating-stars flex space-x-1 text-sm">
+    <div className="m-0 p-0 rating-stars flex justify-around text-sm">
       {[...Array(totalStars)].map((_, index) => (
         <span
           key={index}

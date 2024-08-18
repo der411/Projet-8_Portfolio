@@ -1,22 +1,31 @@
 import React, { useState } from 'react';
 import { XIcon } from '@heroicons/react/solid';
 
-export default function ContactForm() {
+function ContactForm() {
+
+  // Etat pour gérer l'ouverture et la fermeture du formulaire
   const [isOpen, setIsOpen] = useState(false);
+
+  // Etat pour gérer les données du formulaire
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
     message: '',
   });
+
+  // Etat pour gérer le message de statut
   const [status, setStatus] = useState('');
 
+  // Fonction pour ouvrir et fermer le formulaire
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  // Fonction pour gérer les changements dans le formulaire
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Fonction pour envoyer le formulaire
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -140,3 +149,5 @@ export default function ContactForm() {
     </div>
   );
 }
+
+export default ContactForm;

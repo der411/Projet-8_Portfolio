@@ -4,6 +4,7 @@ import Project from "../components/Projects";
 import Competences from "../components/Competences";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
+import projectsData from "../data/projectsData.json";
 import competencesData from "../data/competencesData.json";
 
 
@@ -15,7 +16,7 @@ function Home() {
         <Banner />
       </header>
       <main>
-        <Project />
+        <Project projects={projectsData} />
         <Competences competences={competencesData}  />
       </main>
       <footer>

@@ -74,8 +74,8 @@ function Banner() {
           aria-label="Télécharger mon CV au format PDF"
           className="flex justify-center text-icon-git w-20 h-20 md:w-28 md:h-28 border hover:border-opacity-60 border-black dark:border-white dark:hover:border-gray-400 rounded-full flex-col items-center gap-1 text-black hover:text-opacity-60 transition duration-300 dark:text-white dark:hover:text-gray-400"
         >
-          <i className="fa-solid fa-cloud-arrow-down text-xl md:text-6xl"></i>
-          <span className='text-xs md:text-md lg:text-lg'>CV</span>
+          <i className="fa-solid fa-cloud-arrow-down text-xl md:text-5xl"></i>
+          <span className='text-md md:text-lg lg:text-xl'>CV</span>
         </button>
       </div>
     </div>

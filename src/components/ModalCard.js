@@ -1,7 +1,7 @@
 import Modal from 'react-modal';
 import Slideshow from './SlideShow';
 
-
+// Fonction pour afficher les détails d'un projet dans une modale
 function ModalCard({ isOpen, onRequestClose, project }) {
   if (!project) {
     return null;

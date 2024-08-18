@@ -1,17 +1,24 @@
 import { useState } from 'react';
 
 function Nav() {
+
+  // Etat pour gérer l'ouverture et la fermeture du menu hamburger
   const [isOpen, setIsOpen] = useState(false);
+
+  // Etat pour gérer le lien actif
   const [activeLink, setActiveLink] = useState('#home');
 
+  // Fonction pour ouvrir et fermer le menu hamburger
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  // Fonction pour définir le lien actif
   const handleSetActiveLink = (link) => {
     setActiveLink(link);
   };
 
+  // Fonction pour gérer le clic sur un lien de navigation
   const handleAnchorClick = (event, href) => {
     event.preventDefault();
     const targetElement = document.querySelector(href);
@@ -26,6 +33,7 @@ function Nav() {
     handleSetActiveLink(href);
   };
 
+  // Liens de navigation
   const navLinks = [
     { href: '#home', label: 'Accueil' },
     { href: '#projects', label: 'Travaux' },

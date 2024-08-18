@@ -28,7 +28,7 @@
     color: #FFFFFF; /* Couleur de texte pour le mode sombre */
   }
 
-  /* Styles barre de défilement */
+  /* Styles barre de défilement modale*/
   div::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px #f8fbff;
     border-radius: 5px;
@@ -44,7 +44,7 @@
     border-radius: 5px;
   }
     
-  /* Styles pour le texte d'accroche */
+  /* Animation écriture texte d'accroche */
   .typewriter-wrapper {
     display: flex;
     justify-content: center; /* Centre le texte horizontalement */
@@ -63,20 +63,20 @@
     to { width: 100%; }
   }
 
-  /* Animation pour l'effet de croissance GitHub */
+  @media (max-width: 768px) {
+    .typewriter {
+      animation: none;
+      white-space: normal;
+    }
+  }
+
+  /* Animation pour l'effet de grossissement GitHub */
   @keyframes github-grow {
     0%, 100% {
       transform: scale(1);
     }
     50% {
       transform: scale(1.2);
-    }
-  }
-
-  @media (max-width: 768px) {
-    .typewriter {
-      animation: none;
-      white-space: normal;
     }
   }
 
