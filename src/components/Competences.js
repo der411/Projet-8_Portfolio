@@ -20,7 +20,7 @@ function Competences( { competences } ) {
               className="m-5 w-12 h-12 object-contain"
             />
             <RatingStars rating={competence.rating} />
-            <div className="m-5 w-16 flex flex-col items-center text-xs">
+            <div className="m-5 w-16 flex flex-col items-center text-xs md:text-sm">
               <p className='font-bold'>{competence.name}</p>
               <p>{competence.description}</p>
             </div>

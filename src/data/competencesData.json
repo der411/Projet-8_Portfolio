@@ -47,6 +47,13 @@
       "description": "Langage de style pour le developpement web.",
       "icon": "/assets/css-icon.svg",
       "rating": 4
+    },
+    {
+      "id": "8",
+      "name": "GitHub",
+      "description": "Facilite le travail en équipe et le contrôle de version via Git",
+      "icon": "/assets/github-icon.svg",
+      "rating": 3
     }
   ]
   

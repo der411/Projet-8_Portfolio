@@ -14,7 +14,7 @@ function ModalCard({ isOpen, onRequestClose, project }) {
       onRequestClose={onRequestClose}
       contentLabel="Détails du projet"
       overlayClassName="flex items-center justify-center fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 z-50"
-      className="relative w-3/4 sm:w-3/4 md:w-1/2 lg:w-1/2 max-h-[90vh] p-0 m-auto rounded-lg"
+      className="relative w-3/4 sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 max-h-[90vh] p-0 m-auto rounded-lg"
     >
       <div className="relative">
         <button
