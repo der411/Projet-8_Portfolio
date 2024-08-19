@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
 import projectsData from "../data/projectsData.json";
 import competencesData from "../data/competencesData.json";
+import competencesLearning from "../data/competencesLearningData.json";
 
 
 function Home() {
@@ -17,7 +18,7 @@ function Home() {
       </header>
       <main>
         <Project projects={projectsData} />
-        <Competences competences={competencesData}  />
+        <Competences competences={competencesData} competencesLearning={competencesLearning} />
       </main>
       <footer>
         <ContactForm />
