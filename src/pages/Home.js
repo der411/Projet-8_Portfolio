@@ -1,36 +1,28 @@
-import React, { Suspense, lazy } from 'react';
-import projectsData from '../data/projectsData.json';
-import competencesData from '../data/competencesData.json';
-import competencesLearning from '../data/competencesLearningData.json';
+import Banner from "../components/Banner";
+import Nav from "../components/Nav";
+import Project from "../components/Projects";
+import Competences from "../components/Competences";
+import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm";
+import projectsData from "../data/projectsData.json";
+import competencesData from "../data/competencesData.json";
+import competencesLearning from "../data/competencesLearningData.json";
 
-// Utilisation de React.lazy pour charger dynamiquement les composants lourds
-const Banner = lazy(() => import('../components/Banner'));
-const Nav = lazy(() => import('../components/Nav'));
-const Project = lazy(() => import('../components/Projects'));
-const Competences = lazy(() => import('../components/Competences'));
-const Footer = lazy(() => import('../components/Footer'));
-const ContactForm = lazy(() => import('../components/ContactForm'));
 
 function Home() {
   return (
     <div>
       <header>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Nav />
-          <Banner />
-        </Suspense>
+        <Nav />
+        <Banner />
       </header>
       <main>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Project projects={projectsData} />
-          <Competences competences={competencesData} competencesLearning={competencesLearning} />
-        </Suspense>
+        <Project projects={projectsData} />
+        <Competences competences={competencesData} competencesLearning={competencesLearning} />
       </main>
       <footer>
-        <Suspense fallback={<div>Loading...</div>}>
-          <ContactForm />
-          <Footer />
-        </Suspense>
+        <ContactForm />
+        <Footer />
       </footer>
     </div>
   );

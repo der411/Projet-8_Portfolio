@@ -1,23 +1,18 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 import './styles/style.css';
-
-// Importation dynamique des pages
-const Home = React.lazy(() => import('./pages/Home'));
-const Error404 = React.lazy(() => import('./pages/Error404'));
+import Error404 from './pages/Error404';
 
 function App() {
   return (
     <Router>
       <div>
         <main>
-          {/* Suspense affiche un fallback pendant le chargement des composants */}
-          <Suspense fallback={<div>Loading...</div>}>
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route path="*" element={<Error404 />} />
-            </Routes>
-          </Suspense>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="*" element={<Error404 />} />
+          </Routes>
         </main>
       </div>
     </Router>
