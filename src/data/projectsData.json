@@ -1,110 +1,108 @@
 [
-    {
-      "id": "1",
-      "title": "Kasa, site de location immobilière",
-      "description": "Ce projet, réalisé dans le cadre de ma formation chez OpenClassrooms, consiste en le développement de la partie front-end d'un site de location immobilière. J'ai pu y découvrir et utiliser les props et les state pour la gestion d'état des composants, le système de routage pour la navigation entre les pages d'une SPA, ainsi qu'un carrousel d'images et des éléments collapsibles. L'application est entièrement responsive.",
-      "development": "Le développement de la partie front-end a été réalisé en React.js.",
-      "chalenges": "Le principal défi de ce projet a été de réaliser un carrousel d'images et des éléments dépliables.",
-      "solution": "Pour le carrousel d'images, j'ai créé un composant SlideShow qui prend en paramètre la prop 'pictures'. J'ai utilisé useState pour initialiser l'index courant à zéro. Deux fonctions permettent la navigation suivante/précédente entre les images, en utilisant le modulo pour créer un effet de boucle. Pour les éléments dépliables, j'ai créé un composant Collapse qui prend en props un titre et un contenu, et qui gère l'ouverture et la fermeture de ce contenu.",
-      "githubLink": "https://github.com/der411/Projet-5_React",
-      "images": [
-      "/assets/kasa-desktop1.webp",
-      "/assets/kasa-desktop2.webp",
-      "/assets/kasa-desktop3.webp",
-      "/assets/kasa-desktop4.webp",
-      "/assets/kasa-mobile1.webp",
-      "/assets/kasa-mobile2.webp",
-      "/assets/kasa-mobile3.webp",
-      "/assets/kasa-mobile4.webp"
+  {
+    "id": "1",
+    "title": "Kasa, site de location immobilière",
+    "description": "Ce projet, réalisé dans le cadre de ma formation chez OpenClassrooms, consiste en le développement de la partie front-end d'un site de location immobilière. J'ai pu y découvrir et utiliser les props et les state pour la gestion d'état des composants, le système de routage pour la navigation entre les pages d'une SPA, ainsi qu'un carrousel d'images et des éléments collapsibles. L'application est entièrement responsive.",
+    "development": "Le développement de la partie front-end a été réalisé en React.js.",
+    "chalenges": "Le principal défi de ce projet a été de réaliser un carrousel d'images et des éléments dépliables.",
+    "solution": "Pour le carrousel d'images, j'ai créé un composant SlideShow qui prend en paramètre la prop 'pictures'. J'ai utilisé useState pour initialiser l'index courant à zéro. Deux fonctions permettent la navigation suivante/précédente entre les images, en utilisant le modulo pour créer un effet de boucle. Pour les éléments dépliables, j'ai créé un composant Collapse qui prend en props un titre et un contenu, et qui gère l'ouverture et la fermeture de ce contenu.",
+    "githubLink": "https://github.com/der411/Projet-5_React",
+    "images": [
+      "/assets/kasa-mobil1.webp",
+      "/assets/kasa-mobil2.webp",
+      "/assets/kasa-mobil3.webp",
+      "/assets/kasa-mobil4.webp",
+      "/assets/kasa-mobil5.webp",
+      "/assets/kasa-mobil6.webp",
+      "/assets/kasa-mobil7.webp",
+      "/assets/kasa-mobil8.webp"
     ]
-    },
-    {
-      "id": "2",
-      "title": "Mon Vieux Grimoire, site de notation de livres",
-      "description": "Ce projet, réalisé dans le cadre de ma formation chez OpenClassrooms, consiste en le développement de la partie back-end d'un site de notation de livres. J'y ai découvert et utilisé les routes, les middlewares, les controllers, les modèles et les schémas. J'ai également travaillé sur les méthodes CRUD, la gestion des erreurs, ainsi que l'utilisation des JWT pour l'authentification.",
-      "development": "Le développement a été réalisé avec Node.js, Express et MongoDB.",
-      "chalenges": "Le principal défi de ce projet a été de réaliser la gestion de l'authentification.",
-      "solution": "Pour la gestion de l'authentification, j'ai créé un middleware auth qui vérifie la présence d'un token JWT dans le header de la requête. J'ai utilisé la méthode verify de jsonwebtoken pour décoder le token et récupérer l'ID de l'utilisateur.",
-      "githubLink": "https://github.com/der411/Projet-6_Express_MongoDB",
-      "images": [
-      "/assets/grimoire-desktop1.webp",
-      "/assets/grimoire-desktop2.webp",
-      "/assets/grimoire-desktop3.webp",
-      "/assets/grimoire-desktop4.webp",
-      "/assets/grimoire-desktop5.webp",
-      "/assets/grimoire-desktop6.webp",
-      "/assets/grimoire-desktop7.webp"
-      ]
-    },
-    {
-      "id": "3",
-      "title": "Portfolio de Sophie Bluel, Architecte d'intérieur",
-      "description": "Dans ce projet, je développe une page web dynamique pour le site d'une architecte d'intérieur, en utilisant JavaScript pour gérer les événements utilisateurs et manipuler le DOM. Je crée également une page de connexion pour l'administrateur et une modale pour uploader de nouveaux médias. Le projet inclut la communication avec une API.",
-      "development": "Le développement a été réalisé avec JavaScript.",
-      "chalenges": "Le principal défi de ce projet a été de réaliser la communication avec une API.",
-      "solution": "Pour la communication avec l'API, j'ai utilisé fetch pour envoyer des requêtes GET et POST. J'ai créé une fonction pour récupérer les données de l'API et les afficher sur la page, et une autre pour envoyer les données du formulaire de connexion.",
-      "githubLink": "https://github.com/der411/Projet-3_javascript_Portfolio-architecte-sophie-bluel",
-      "images": [
-      "/assets/sophie-desktop1.webp",
-      "/assets/sophie-desktop2.webp",
-      "/assets/sophie-desktop3.webp",
-      "/assets/sophie-desktop4.webp",
-      "/assets/sophie-desktop5.webp",
-      "/assets/sophie-desktop6.webp",
-      "/assets/sophie-desktop7.webp"
-      ]
-    },
-    {
-      "id": "4",
-      "title": "Booki, site d'agence immobilière",
-      "description": "Dans ce projet, je crée la page d'accueil d'une agence de voyage en utilisant HTML et CSS. Ma mission principale est d'intégrer une interface responsive pour le site, en suivant les maquettes Figma fournies pour mobile, tablette et desktop. J'écris mon propre code HTML et CSS.",
-      "development": "Le développement a été réalisé avec HTML5, CSS3 et Flexbox.",
-      "chalenges": "Le principal défi de ce projet a été de réaliser l'intégration responsive.",
-      "solution": "Pour l'intégration responsive, j'ai utilisé Flexbox pour créer une mise en page flexible qui s'adapte à toutes les tailles d'écran. J'ai utilisé les media queries pour appliquer des styles spécifiques en fonction de la largeur de l'écran.",
-      "githubLink": "https://github.com/der411/Projet-2_HTML-CSS_Booki_OC",
-      "images": [
-      "/assets/booki-desktop.webp",
-      "/assets/booki-mobile.webp",
-      "/assets/booki-tablette.webp"
-      
-      ]
-    },
-    {
-      "id": "5",
-      "title": "Nina Carducci, portfolio de photographe",
-      "description": "Dans ce projet, j'optimise le référencement et l'accessibilité d'un site en utilisant des outils comme Lighthouse et Wave. Je diagnostique les problèmes de performance, propose et applique des solutions pour améliorer la vitesse de chargement et le SEO. Je finalise avec un rapport illustrant les améliorations avant et après modifications.",
-      "development": "Débugage / Optimisation / SEO / Accessibilité",
-      "chalenges": "Le principal défi de ce projet a été de réaliser l'optimisation SEO.",
-      "solution": "Pour l'optimisation SEO, j'ai utilisé des balises sémantiques pour structurer le contenu, des attributs alt pour les images, des meta tags pour la description, et j'ai amélioré la vitesse de chargement en compressant les images.",
-      "githubLink": "https://github.com/der411/Projet-4_SEO",
-      "images": [
-      "/assets/nina-desktop1.webp"
-      ]
-    },
-    {
-      "id": "6",
-      "title": "Menu Maker by Qwenta",
-      "description": "Dans ce projet, je planifie le développement d'un site web en rédigeant les spécifications techniques basées sur les maquettes et les User Stories. Je réalise une veille technologique pour rester à jour et utilise un outil comme Notion pour organiser le projet avec un tableau Kanban. Je ne participe pas au codage, mais je présente la solution technique finale.",
-      "development": "Veille technologique / Spécifications techniques / Agile / Scrum / Kanban",
-      "chalenges": "Le principal défi de ce projet a été de réaliser la planification agile.",
-      "solution": "Pour la planification agile, j'ai utilisé un tableau Kanban pour organiser les tâches en cours, à faire, à tester et terminées. ",
-      "githubLink": "https://github.com/der411/Projet-7_Planification_Agile",
-      "images": [
-      "/assets/menu-maker-desktop1.webp",
-      "/assets/menu-maker-desktop2.webp",
-      "/assets/menu-maker-desktop3.webp",
-      "/assets/menu-maker-desktop4.webp",
-      "/assets/menu-maker-desktop5.webp",
-      "/assets/menu-maker-desktop6.webp",
-      "/assets/menu-maker-desktop7.webp",
-      "/assets/menu-maker-desktop8.webp",
-      "/assets/menu-maker-desktop9.webp",
-      "/assets/menu-maker-desktop10.webp",
-      "/assets/menu-maker-desktop11.webp",
-      "/assets/menu-maker-desktop12.webp",
-      "/assets/menu-maker-desktop13.webp",
-      "/assets/menu-maker-desktop14.webp"
-      ]
-    }
-  ]
-  
+  },
+  {
+    "id": "2",
+    "title": "Mon Vieux Grimoire, site de notation de livres",
+    "description": "Ce projet, réalisé dans le cadre de ma formation chez OpenClassrooms, consiste en le développement de la partie back-end d'un site de notation de livres. J'y ai découvert et utilisé les routes, les middlewares, les controllers, les modèles et les schémas. J'ai également travaillé sur les méthodes CRUD, la gestion des erreurs, ainsi que l'utilisation des JWT pour l'authentification.",
+    "development": "Le développement a été réalisé avec Node.js, Express et MongoDB.",
+    "chalenges": "Le principal défi de ce projet a été de réaliser la gestion de l'authentification.",
+    "solution": "Pour la gestion de l'authentification, j'ai créé un middleware auth qui vérifie la présence d'un token JWT dans le header de la requête. J'ai utilisé la méthode verify de jsonwebtoken pour décoder le token et récupérer l'ID de l'utilisateur.",
+    "githubLink": "https://github.com/der411/Projet-6_Express_MongoDB",
+    "images": [
+      "/assets/grimoire-mobil1.webp",
+      "/assets/grimoire-mobil2.webp",
+      "/assets/grimoire-mobil3.webp",
+      "/assets/grimoire-mobil4.webp",
+      "/assets/grimoire-mobil5.webp",
+      "/assets/grimoire-mobil6.webp",
+      "/assets/grimoire-mobil7.webp"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Portfolio de Sophie Bluel, Architecte d'intérieur",
+    "description": "Dans ce projet, je développe une page web dynamique pour le site d'une architecte d'intérieur, en utilisant JavaScript pour gérer les événements utilisateurs et manipuler le DOM. Je crée également une page de connexion pour l'administrateur et une modale pour uploader de nouveaux médias. Le projet inclut la communication avec une API.",
+    "development": "Le développement a été réalisé avec JavaScript.",
+    "chalenges": "Le principal défi de ce projet a été de réaliser la communication avec une API.",
+    "solution": "Pour la communication avec l'API, j'ai utilisé fetch pour envoyer des requêtes GET et POST. J'ai créé une fonction pour récupérer les données de l'API et les afficher sur la page, et une autre pour envoyer les données du formulaire de connexion.",
+    "githubLink": "https://github.com/der411/Projet-3_javascript_Portfolio-architecte-sophie-bluel",
+    "images": [
+      "/assets/sophie-mobil1.webp",
+      "/assets/sophie-mobil2.webp",
+      "/assets/sophie-mobil3.webp",
+      "/assets/sophie-mobil4.webp",
+      "/assets/sophie-mobil5.webp",
+      "/assets/sophie-mobil6.webp",
+      "/assets/sophie-mobil7.webp"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Booki, site d'agence immobilière",
+    "description": "Dans ce projet, je crée la page d'accueil d'une agence de voyage en utilisant HTML et CSS. Ma mission principale est d'intégrer une interface responsive pour le site, en suivant les maquettes Figma fournies pour mobile, tablette et desktop. J'écris mon propre code HTML et CSS.",
+    "development": "Le développement a été réalisé avec HTML5, CSS3 et Flexbox.",
+    "chalenges": "Le principal défi de ce projet a été de réaliser l'intégration responsive.",
+    "solution": "Pour l'intégration responsive, j'ai utilisé Flexbox pour créer une mise en page flexible qui s'adapte à toutes les tailles d'écran. J'ai utilisé les media queries pour appliquer des styles spécifiques en fonction de la largeur de l'écran.",
+    "githubLink": "https://github.com/der411/Projet-2_HTML-CSS_Booki_OC",
+    "images": [
+      "/assets/booki-mobil1.webp",
+      "/assets/booki-mobil2.webp",
+      "/assets/booki-mobil3.webp"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Nina Carducci, portfolio de photographe",
+    "description": "Dans ce projet, j'optimise le référencement et l'accessibilité d'un site en utilisant des outils comme Lighthouse et Wave. Je diagnostique les problèmes de performance, propose et applique des solutions pour améliorer la vitesse de chargement et le SEO. Je finalise avec un rapport illustrant les améliorations avant et après modifications.",
+    "development": "Débugage / Optimisation / SEO / Accessibilité",
+    "chalenges": "Le principal défi de ce projet a été de réaliser l'optimisation SEO.",
+    "solution": "Pour l'optimisation SEO, j'ai utilisé des balises sémantiques pour structurer le contenu, des attributs alt pour les images, des meta tags pour la description, et j'ai amélioré la vitesse de chargement en compressant les images.",
+    "githubLink": "https://github.com/der411/Projet-4_SEO",
+    "images": [
+      "/assets/nina-mobil1.webp"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Menu Maker by Qwenta",
+    "description": "Dans ce projet, je planifie le développement d'un site web en rédigeant les spécifications techniques basées sur les maquettes et les User Stories. Je réalise une veille technologique pour rester à jour et utilise un outil comme Notion pour organiser le projet avec un tableau Kanban. Je ne participe pas au codage, mais je présente la solution technique finale.",
+    "development": "Veille technologique / Spécifications techniques / Agile / Scrum / Kanban",
+    "chalenges": "Le principal défi de ce projet a été de réaliser la planification agile.",
+    "solution": "Pour la planification agile, j'ai utilisé un tableau Kanban pour organiser les tâches en cours, à faire, à tester et terminées.",
+    "githubLink": "https://github.com/der411/Projet-7_Planification_Agile",
+    "images": [
+      "/assets/menu-maker-mobil1.webp",
+      "/assets/menu-maker-mobil2.webp",
+      "/assets/menu-maker-mobil3.webp",
+      "/assets/menu-maker-mobil4.webp",
+      "/assets/menu-maker-mobil5.webp",
+      "/assets/menu-maker-mobil6.webp",
+      "/assets/menu-maker-mobil7.webp",
+      "/assets/menu-maker-mobil8.webp",
+      "/assets/menu-maker-mobil9.webp",
+      "/assets/menu-maker-mobil10.webp",
+      "/assets/menu-maker-mobil11.webp",
+      "/assets/menu-maker-mobil12.webp",
+      "/assets/menu-maker-mobil13.webp",
+      "/assets/menu-maker-mobil14.webp"
+    ]
+  }
+]
