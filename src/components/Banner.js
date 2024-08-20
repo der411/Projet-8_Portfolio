@@ -1,8 +1,27 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import FireflyParticles from './FireflyParticles';
 import DarkModeToggle from './DarkModeToggle';
 
 function Banner() {
+
+  // État pour savoir si l'écran est un mobile
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Taille d'écran pour mobile
+    };
+
+    // Première vérification de la taille de l'écran
+    handleResize();
+
+    // Écoute les changements de taille de l'écran
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   // Fonction pour télécharger le CV
   function handleDownload() {
@@ -19,7 +38,7 @@ function Banner() {
       id="home"
       className="bg-card text-black p-10 m-5 mt-20 pb-10 shadow-lg flex flex-col items-center relative rounded-xl dark:bg-custom-gray overflow-hidden"
     >
-      <FireflyParticles />
+      {!isMobile && <FireflyParticles />}
       <div className="absolute top-0 right-2 p-4 z-10">
         <DarkModeToggle />
       </div>
