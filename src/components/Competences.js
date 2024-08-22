@@ -6,9 +6,10 @@ function Competences( { competences, competencesLearning } ) {
       id="competences"
       className="p-5 m-5 mb-20 bg-card dark:bg-custom-gray border dark:dark:border-border-card rounded-b-lg"
     >
-      <h2 className="text-center text-black dark:text-white text-2xl mb-5">Mes compétences</h2>
+      <h2 className="text-center text-black dark:text-white text-2xl mb-5">
+      <i className="fa fa-laptop-code mr-2"></i>
+        Mes compétences</h2>
       <div className="text-center text-black dark:text-white my-12 leading-7 bg-vscode">
-        <i className="fa fa-laptop-code text-6xl mb-4"></i>
         <p className='text-xl'>Développement d'applications web front-end et back-end.</p>
       </div>
       <div className="flex flex-wrap justify-center">

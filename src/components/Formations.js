@@ -1,4 +1,3 @@
-import React from 'react';
 
 function Formations({ formations }) {
   return (
@@ -6,8 +5,10 @@ function Formations({ formations }) {
       id="formations"
       className="p-5 m-5 mb-20 bg-card dark:bg-custom-gray border dark:dark:border-border-card rounded-lg"
     >
-      <h2 className="text-center text-black dark:text-white text-2xl mb-5">Mes Formations</h2>
-      <div className="flex flex-wrap justify-center">
+      <h2 className="text-center text-black dark:text-white text-2xl mb-10">
+      <i className="fa-solid fa-school-circle-check mr-2 text-black dark:text-white" />
+        Mes Formations</h2>
+      <div className="flex flex-wrap justify-around">
         {formations.map((formation) => (
           <div key={formation.id} className="m-2 flex flex-col items-center">
             <div className="m-5 w-64 flex flex-col items-start text-2xs md:text-xs">
