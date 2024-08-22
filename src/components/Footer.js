@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer id="reseaux-sociaux" className="bg-footer dark:bg-border-card dark:border dark:border-custom-gray dark:shadow-inner-custom border-none shadow-none flex flex-col items-center justify-center py-4 rounded-t-lg">
+    <footer className="bg-footer dark:bg-border-card dark:border dark:border-custom-gray dark:shadow-inner-custom border-none shadow-none flex flex-col items-center justify-center py-4 rounded-t-lg">
       <div className="flex flex-col items-center justify-center">
         <div className="flex space-x-4">
           <a

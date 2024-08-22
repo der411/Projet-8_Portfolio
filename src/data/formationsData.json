@@ -1,0 +1,24 @@
+[ 
+  {
+    "id": 1,
+    "titre": "Développeur D'Application Informatique",
+    "etablissement": "Philiance Formation",
+    "dates": {
+      "debut": "2023-04",
+      "fin": "2023-09"
+    },
+    "description": "Formation intensive en développement web couvrant HTML, CSS, TypeScript, Java, et frameworks front-end comme Angular. Travail sur un projet fullstack, avec soutenance orale en fin de formation.",
+    "status": "Réussi"
+  },
+  {
+    "id": 2,
+    "titre": "Développeur Web",
+    "etablissement": "Open Classrooms 100% en ligne",
+    "dates": {
+      "debut": "2024-02",
+      "fin": "2024-08"
+    },
+    "description": "Formation intensive en développement web couvrant HTML, CSS, JavaScript, Mongodb et frameworks front-end comme React. Travail sur des projes professionnalisants, avec soutenance orale filmée en fin de chaque projet.",
+    "status": "En cours"
+  }
+]

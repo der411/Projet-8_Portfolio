@@ -37,8 +37,8 @@ function Nav() {
   const navLinks = [
     { href: '#home', label: 'Accueil' },
     { href: '#projects', label: 'Travaux' },
+    { href: '#formations', label: 'Formations' },
     { href: '#competences', label: 'Compétences' },
-    { href: '#reseaux-sociaux', label: 'Réseaux sociaux' },
   ];
 
   return (
