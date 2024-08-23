@@ -16,5 +16,11 @@
       "name": "Docker",
       "description": "Plateforme de conteneurisation pour déployer et gérer des applications dans des environnements isolés.",
       "icon": "/assets/docker-icon.svg"
+    },
+    {
+      "id": "4",
+      "name": "Test unitaire et fonctionnel",
+      "description": "Méthode de test pour vérifier le bon fonctionnement d'une application.",
+      "icon": "/assets/test-icon.webp"
     }
 ]
