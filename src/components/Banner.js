@@ -74,7 +74,7 @@ function Banner() {
       </svg>
       <div className="flex flex-col relative mt-20 z-10 2xl:mt-40 typewriter-wrapper">
         <p className="text-center max-w-4xl text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl dark:text-white pb-6 flex items-baseline typewriter">
-          Développeur web dédié à la création de sites modernes.
+          Développeur web junior dédié à la création de sites modernes.
         </p>
       </div>
 
