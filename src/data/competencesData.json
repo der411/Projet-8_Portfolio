@@ -8,59 +8,74 @@
     },
     {
       "id": "2",
+      "name": "Angular",
+      "description": "Framework JavaScript pour le developpement front-end.",
+      "icon": "/assets/angular-icon.svg",
+      "rating": 3
+    },
+    {
+      "id": "3",
       "name": "Node JS",
       "description": "Environnement d'exécution JavaScript côté serveur.",
       "icon": "/assets/nodejs-icon.svg",
       "rating": 3
     },
     {
-      "id": "3",
+      "id": "4",
+      "name": "Spring Boot",
+      "description": "Framework Java pour le developpement back-end.",
+      "icon": "/assets/springboot-icon.svg",
+      "rating": 3
+    },
+    {
+      "id": "5",
       "name": "MongoDB",
       "description": "Système de gestion de base de données NoSQL.",
       "icon": "/assets/mongodb-icon.svg",
       "rating": 3
     },
     {
-      "id": "4",
+      "id": "6",
       "name": "MySQL",
       "description": "Système de gestion de base de données SQL.",
       "icon": "/assets/mysql-icon.svg",
       "rating": 3
     },
     {
-      "id": "5",
+      "id": "7",
       "name": "JavaScript",
       "description": "Langage de programmation employé dans les pages web interactives.",
       "icon": "/assets/javascript-icon.svg",
       "rating": 3
     },
     {
-      "id": "6",
+      "id": "8",
       "name": "Tailwind CSS",
       "description": "Framework CSS.",
       "icon": "/assets/tailwind-icon.svg",
       "rating": 3
     },
     {
-      "id": "7",
+      "id": "9",
       "name": "HTML5",
       "description": "Langage de balisage pour le developpement web.",
       "icon": "/assets/html-icon.svg",
       "rating": 4
     },
     {
-      "id": "8",
+      "id": "10",
       "name": "CSS3",
       "description": "Langage de style pour le developpement web.",
       "icon": "/assets/css-icon.svg",
       "rating": 4
     },
     {
-      "id": "9",
+      "id": "11",
       "name": "GitHub",
       "description": "Plateforme de gestion de versions et de collaboration pour le développement de projets.",
       "icon": "/assets/github-icon.svg",
       "rating": 3
     }
+
   ]
   
