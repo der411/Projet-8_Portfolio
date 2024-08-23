@@ -20,8 +20,8 @@ function Home() {
       </header>
       <main>
         <Project projects={projectsData} />
-        <Formations formations={formationsData}/>
         <Competences competences={competencesData} competencesLearning={competencesLearning} />
+        <Formations formations={formationsData}/>
       </main>
       <footer>
         <ContactForm />
