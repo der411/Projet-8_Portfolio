@@ -22,5 +22,11 @@
       "name": "Test unitaire et fonctionnel",
       "description": "Méthode de test pour vérifier le bon fonctionnement d'une application.",
       "icon": "/assets/test-icon.webp"
+    },
+    {
+      "id": "5",
+      "name": "Symfony",
+      "description": "Framework populaire pour le développement d'applications web en PHP.",
+      "icon": "/assets/symfony-icon.svg"
     }
 ]
