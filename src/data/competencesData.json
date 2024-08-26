@@ -72,10 +72,9 @@
     {
       "id": "11",
       "name": "GitHub",
-      "description": "Plateforme de gestion de versions et de collaboration pour le développement de projets.",
+      "description": "Plateforme de gestion de versions et de collaboration pour le développement de projets",
       "icon": "/assets/github-icon.svg",
       "rating": 3
     }
-
   ]
   

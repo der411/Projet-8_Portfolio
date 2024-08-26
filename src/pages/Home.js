@@ -1,6 +1,6 @@
 import Banner from "../components/Banner";
 import Nav from "../components/Nav";
-import Project from "../components/Projects";
+import Projects from "../components/Projects";
 import Competences from "../components/Competences";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
@@ -19,7 +19,7 @@ function Home() {
         <Banner />
       </header>
       <main>
-        <Project projects={projectsData} />
+        <Projects projects={projectsData} />
         <Competences competences={competencesData} competencesLearning={competencesLearning} />
         <Formations formations={formationsData}/>
       </main>
