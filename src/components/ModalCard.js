@@ -9,7 +9,6 @@ function ModalCard({ isOpen, onRequestClose, project }) {
 
   return (
     <Modal
-      key={project ? project.id : 'default-key'}
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Détails du projet"

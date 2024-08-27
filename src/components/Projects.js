@@ -9,13 +9,13 @@ function Projects( { projects } ) {
   // Etat pour gérer le projet sélectionné
   const [selectedProject, setSelectedProject] = useState(null);
 
-  // Fonction pour ouvrir le modal
+  // Fonction pour ouvrir le modal et stocker le projet sélectionné
   const openModal = (project) => {
     setSelectedProject(project);
     setModalIsOpen(true);
   };
 
-  // Fonction pour fermer le modal
+  // Fonction pour fermer le modal et réinitialiser le projet sélectionné
   const closeModal = () => {
     setModalIsOpen(false);
     setSelectedProject(null);

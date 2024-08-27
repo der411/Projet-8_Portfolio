@@ -1,12 +1,16 @@
 import { useState } from 'react';
 
 function Slideshow({ pictures }) {
+
+  // Etat pour gérer l'index de la photo actuelle
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Fonction pour passer à la photo suivante
   function nextSlide() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
   }
 
+  // Fonction pour passer à la photo précédente
   function prevSlide() {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
   }
