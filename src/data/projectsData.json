@@ -2,10 +2,10 @@
   {
     "id": "1",
     "title": "Kasa, site de location immobilière",
-    "description": "Ce projet, réalisé dans le cadre de ma formation chez OpenClassrooms, consiste en le développement de la partie front-end d'un site de location immobilière. J'ai pu y découvrir et utiliser les props et les state pour la gestion d'état des composants, le système de routage pour la navigation entre les pages d'une SPA, ainsi qu'un carrousel d'images et des éléments collapsibles. L'application est entièrement responsive.",
-    "development": "Le développement de la partie front-end a été réalisé en React.js et SCSS.",
+    "description": "Ce projet, réalisé dans le cadre de ma formation chez OpenClassrooms, consiste en le développement de la partie front-end d'un site de location immobilière. J'ai pu y découvrir et utiliser les props et le Hook useState pour la gestion d'état des composants fonctionnels, le système de routage pour la navigation entre les pages d'une SPA, ainsi qu'un carrousel d'images et des éléments dépliables. L'application est entièrement responsive.",
+    "development": "Le développement de la partie front-end a été réalisé en React.js, React-Router et SCSS.",
     "chalenges": "Le principal défi de ce projet a été de réaliser un carrousel d'images et des éléments dépliables.",
-    "solution": "Pour le carrousel d'images, j'ai créé un composant SlideShow qui prend en paramètre la prop 'pictures'. J'ai utilisé useState pour initialiser l'index courant à zéro. Deux fonctions permettent la navigation suivante/précédente entre les images, en utilisant le modulo pour créer un effet de boucle. Pour les éléments dépliables, j'ai créé un composant Collapse qui prend en props un titre et un contenu, et qui gère l'ouverture et la fermeture de ce contenu.",
+    "solution": "Pour le carrousel d'images, j'ai créé un composant SlideShow qui prend en paramètre la prop 'pictures'. J'ai utilisé le Hook useState pour initialiser l'index courant à zéro. J'ai créé deux fonctions qui permettent la navigation suivante/précédente entre les images, en utilisant le modulo pour créer un effet de boucle. Pour les éléments dépliables, j'ai créé un composant 'Collapse' qui prend en props un titre et un contenu, et qui gère l'ouverture et la fermeture de ce contenu.",
     "githubLink": "https://github.com/der411/Projet-5_React",
     "images": [
       "/assets/kasa-mobil1.webp",
