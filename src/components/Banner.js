@@ -26,7 +26,7 @@ function Banner() {
   // Fonction pour télécharger le CV
   function handleDownload() {
     const link = document.createElement('a');
-    link.href = '/documents/Vincent_Vaitilingom_CV Développeur Web.pdf';
+    link.href = '/documents/Vincent_Vaitilingom_CV.pdf';
     link.download = 'Vincent_Vaitilingom_CV.pdf';
     document.body.appendChild(link);
     link.click();
